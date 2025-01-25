@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+    <form>
+        <div>
+            Gender:
+            <input type="radio" name="gen" value="male">male
+            <input type="radio" name="gen" value="female" checked>female
+            <input type="radio" name="gen" value="other">other
+            
+        </div>
+        <div>
+            Sports
+            <input type="checkbox" name="sports" value="1">Football
+            <input type="checkbox" name="sports" value="2" checked>cricket
+            <input type="checkbox" name="sports" value="3">Rugby
+            <!--allows multiply checks -->
+        </div>
+        <!-- Data List-->
+          search <input type="text" list="fruit">
+          <datalist id="fruit">
+            <option value="Mango">
+            <option value="Apple">
+            <option value="Strawberry">
+            <option value="Grapes">
+          </datalist>
+          <input type="submit" value="Search">
+        <div>
+            <label for="fname">Firstname:</label>
+           <input type="text" name="firstname" id="fname"> 
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+</html>
