@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aditya Gupta’s Portfolio & Internships</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+  />
+
+  <style>
+    :root {
+      --primary: #6D5BBA;
+      --accent:  #8C82D1;
+      --dark:    #2C3E50;
+      --light:   #ecf0f1;
+      --radius:  12px;
+      --transition: 0.3s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    body {
+      background: url("https://png.pngtree.com/thumb_back/fw800/background/20221201/pngtree-blue-wave-baground-wallpaper-pattern-vector-image_1478798.jpg")
+        no-repeat center center fixed;
+      background-size: cover;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    
+    .about-hero {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      
+    }
+
+    .about-hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+    }
+
+    .about-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-hero p {
+      max-width: 600px;
+      margin: 0.5rem auto 1.5rem;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: transform var(--transition), background var(--transition);
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+      background: rgba(255,255,255,0.5);
+      color: var(--dark);
+    }
+
+    /* INTERNSHIP SECTION */
+    .internships {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .internships h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--dark);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+
+    .card-header {
+      background: var(--primary);
+      padding: 1rem;
+      color: #fff;
+      text-align: center;
+    }
+
+    .card-header h3 {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+
+    .card-body {
+      padding: 1rem 1.5rem;
+    }
+
+    .detail-list {
+      list-style: none;
+      margin: 1rem 0;
+      padding: 0;
+    }
+
+    .detail-list li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.6rem;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--dark);
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .btn:hover {
+      background: var(--primary);
+      transform: translateY(-2px);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- About Me -->
+  <section class="about-hero">
+    <img src="https://via.placeholder.com/150" alt="Aditya Gupta" />
+    <h1>Aditya Gupta</h1>
+    <p>
+      I’m a passionate full-stack developer with a flair for creating interactive 2D graphics and
+      elegant user experiences. Skilled in C++, Python, Java, and web technologies, I build projects
+      that blend code with creativity.
+    </p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/guptaditya27/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/guptaditya27" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/guptaditya27?igsh=MWxjdGV2M2ZzZ3o2ZA==" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section class="internships">
+    <h2>Virtual Internship Programs</h2>
+    <div class="card-grid">
+
+      <!-- Web Dev -->
+      <div class="card">
+        <div class="card-header"><h3>Web Development</h3></div>
+        <div class="card-body">
+          <ul class="detail-list">
+            <li><span>Duration:</span><strong>1–2 months</strong></li>
+            <li><span>Location:</span><strong>Virtual</strong></li>
+            <li><span>Stipend:</span><strong>–</strong></li>
+            <li><span>Start Date:</span><strong>05/11/2023</strong></li>
+          </ul>
+          <a href="https://internshala.com/internship/web-development-internship" class="btn" target="_blank">
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <!-- App Dev -->
+      <div class="card">
+        <div class="card-header"><h3>App Development</h3></div>
+        <div class="card-body">
+          <ul class="detail-list">
+            <li><span>Duration:</span><strong>1–2 months</strong></li>
+            <li><span>Location:</span><strong>Virtual</strong></li>
+            <li><span>Stipend:</span><strong>–</strong></li>
+            <li><span>Start Date:</span><strong>05/11/2023</strong></li>
+          </ul>
+          <a href="https://internshala.com/internship/app-development-internship" class="btn" target="_blank">
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <!-- Python -->
+      <div class="card">
+        <div class="card-header"><h3>Python Programming</h3></div>
+        <div class="card-body">
+          <ul class="detail-list">
+            <li><span>Duration:</span><strong>1–2 months</strong></li>
+            <li><span>Location:</span><strong>Virtual</strong></li>
+            <li><span>Stipend:</span><strong>–</strong></li>
+            <li><span>Start Date:</span><strong>05/11/2023</strong></li>
+          </ul>
+          <a href="https://internshala.com/internship/python-programming-internship" class="btn" target="_blank">
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <!-- Java -->
+      <div class="card">
+        <div class="card-header"><h3>Java Programming</h3></div>
+        <div class="card-body">
+          <ul class="detail-list">
+            <li><span>Duration:</span><strong>1–2 months</strong></li>
+            <li><span>Location:</span><strong>Virtual</strong></li>
+            <li><span>Stipend:</span><strong>–</strong></li>
+            <li><span>Start Date:</span><strong>05/11/2023</strong></li>
+          </ul>
+          <a href="https://internshala.com/internship/java-programming-internship" class="btn" target="_blank">
+            View Details
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

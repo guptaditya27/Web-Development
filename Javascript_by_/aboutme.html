@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aditya - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+
+        .intro-animation {
+            width: 80px;
+            height: 80px;
+            background-color: #00bcd4;
+            border-radius: 50%;
+            animation: float 3s infinite ease-in-out;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .typing-text {
+            font-size: 1.2em;
+            margin-top: 15px;
+            height: 40px;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #00bcd4;
+            animation: blink 1s step-end infinite;
+            color: #ccc;
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        main {
+            padding: 30px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #007acc;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .intro-animation {
+                width: 50px;
+                height: 50px;
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="intro-animation"></div>
+        <h1>Aditya</h1>
+        <div id="typing-intro" class="typing-text"></div>
+        <script>
+            const introText = "Creative Developer | Problem Solver | Tech Explorer";
+            const words = introText.split(" ");
+            const typingElement = document.getElementById("typing-intro");
+            let wordIndex = 0;
+
+            function typeNextWord() {
+                if (wordIndex < words.length) {
+                    typingElement.textContent += words[wordIndex] + " ";
+                    wordIndex++;
+                    setTimeout(typeNextWord, 500);
+                }
+            }
+
+            window.onload = typeNextWord;
+        </script>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <img src="Aditya.jpg" alt="Aditya's Profile Picture" class="profile-pic">
+            <p>Hi, I'm Aditya Gupta — a passionate full-stack developer from India with a strong foundation in C++, Python, and web technologies. I'm actively exploring data structures, system design, and JavaScript frameworks to build scalable, visually appealing interfaces. My GitHub features operating system simulations, algorithmic challenges, and frontend prototypes that reflect my curiosity and commitment to clean code. I love diving into complex logic, refining performance, and crafting projects that blend technical precision with creativity.</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Advanced C++ and memory management</li>
+                <li>Python graphical programming with OpenGL</li>
+                <li>OS scheduling algorithms and context switching</li>
+            </ul>
+
+            <h2>Interests</h2>
+            <ul>
+                <li>AI and multiagent systems</li>
+                <li>Narrative analysis and structured reasoning</li>
+                <li>Web development and vector geometry</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>🧮 CPU Scheduling Simulator</h3>
+                    <p>Simulates FCFS, SJF, Round Robin & Priority scheduling. Built to reinforce OS concepts and scheduling behavior.</p>
+                    <a href="https://github.com/guptaditya27/cpu-scheduler" target="_blank">Explore Simulation</a>
+                </div>
+                <div class="card">
+                    <h3>🧠 C++ DSA Assignments</h3>
+                    <p>Solutions to classic DSA problems in C++, including linked lists, trees, and recursion with rigorous debugging.</p>
+                    <a href="https://github.com/guptaditya27" target="_blank">View Repository</a>
+                </div>
+                <div class="card">
+                    <h3>🌐 Web Development Snippets</h3>
+                    <p>HTML practice files for clean, semantic, and structured web layouts. Highlights frontend fluency.</p>
+                    <a href="https://github.com/guptaditya27/Web-Development" target="_blank">View Repository</a>
+                </div>
+                <div class="card">
+                    <h3>📘 C++ Lectures & Concepts</h3>
+                    <p>C++ programs on topics like overloading, pointers, and friend functions. Shows strong grasp of object-oriented logic.</p>
+                    <a href="https://github.com/guptaditya27/c--lectures" target="_blank">View Repository</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact & Social Media</h2>
+            <p>Email: <a href="mailto:adgupta285@gmail.com">adgupta285@gmail.com</a></p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/guptaditya27" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/guptaditya27" target="_blank">LinkedIn</a>
+                <a href="https://github.com/guptaditya27" target="_blank">GitHub</a>
+                <a href="https://leetcode.com/offaditya_001" target="_blank">LeetCode</a>
+                <a href="https://www.geeksforgeeks.org/adguptnaht" target="_blank">GeeksforGeeks</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Aditya. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
