@@ -1,0 +1,15 @@
+p{
+    color:red;
+}
+#p3{
+    color:chartreuse;
+}
+.green-text{
+    color:green;
+}
+#h{
+    font-size: 50px;
+}
+.underline{
+    text-decoration: underline;
+}
