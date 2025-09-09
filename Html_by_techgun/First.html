@@ -73,6 +73,26 @@
         <li>Cook Food</li>
         <li>Eat medicine</li>
     </ol>
+    <!-- Comments in html -->
+     
+    <!-- creating a form in html  -->
+    <form action="/api/v1/journals" method="get">
+        <label for="search-bar">Search</label>
+        <input id="search-bar" type="text" name="search" placeholder="Search journal">
+
+        <!-- creating dropdopwn for category of search -->
+        <label for="journal-category">Journal Category</label>
+        <select name="category" id="journal-category" required>
+            <option value="idea">Idea</option>
+            <option value="thought">THought</option>
+            <option value="task">Task</option>
+            <option value="memory">Memory</option>
+            <option value="vichaar">Vichaar</option>
+        </select>
+        <!-- now need to create a button for searching also -->
+         <button type="submit">Submit</button>
+    </form>
+
 
 </body>
 </html> 
