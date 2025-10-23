@@ -25,18 +25,18 @@ h5{
     letter-spacing: -2px;
     font-size: 24px;
 }
-p{
+p,a{
     font-weight: 400;
-    line-height: 1.5;
-    font-size:20px;
     color: #495057;
 }
+p{
+    line-height: 1.5;
+    font-size:20px;
+}
 a{
-    font-weight: 400;
     text-decoration: none;
     line-height: 1.5;
     font-size: 16px;
-    color: #495057;
 }
 ul{
     
