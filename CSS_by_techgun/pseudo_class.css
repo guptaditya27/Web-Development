@@ -1,0 +1,27 @@
+a:link{
+    color:darkmagenta;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    color:chartreuse;
+}
+a:active{
+    color:aqua;
+}
+li:first-child{
+    color:aquamarine;
+}
+li:last-child{
+    color:palevioletred;
+}
+li:nth-child(2n){
+    color:chartreuse;
+}
+li:nth-child(2n+1){
+    color:brown;
+}
+li:first-child{
+    color:aquamarine;
+}
