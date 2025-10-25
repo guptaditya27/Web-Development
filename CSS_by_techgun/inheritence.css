@@ -1,0 +1,13 @@
+.hero-section{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: red;
+    text-align: center;
+}
+/* all the elemnts of div centred and <a> tag also bcoz the dafault
+behv of  child of block leverl contair to centre all of its child */
+
+/* Anchor tag n not centre dur to inline behv
+h1,p,a{
+    text-align: center;
+}*/
