@@ -1,10 +1,18 @@
+/* body will be having default styled for elemnts inheriting */
+body{
+    font-family: 'Poppins',sans-serif;
+    color: #212529;
+    font-weight: 400;
+    line-height: 1.2;
+}
+/* inheritence prop have lowest speficity*/
+
 /*  grouping shared styles  */
 h1,h2,h3,h4,h5{
     font-weight: 700;
-    font-family: 'Poppins',sans-serif;
+    
     letter-spacing: -2px;
     line-height: 1.2;
-    color: #212529;
 }
 h1{
     text-align: center;
@@ -42,18 +50,11 @@ ul{
     
     list-style: none;
 }
-#green-text{
-    color: green;
-}
-.orange-text{
-    color: orange;
-}
 .small-text{
     font-size: 12px;
 }
 .btn{
     font-weight: 400;
-    font-family:'poppins',sans-serif;
     font-size: 16px;
     text-decoration: none;
 }
