@@ -15,11 +15,11 @@ h1,h2,h3,h4,h5{
     line-height: 1.2;
 }
 h1{
-    text-align: center;
+    /*text-align: center; hadling using inheritence */
     font-size: 62px;
 }
 h2{
-    text-align: center;
+    /*text-align: center;*/
     font-size: 48px;
 }
 h3{
@@ -69,4 +69,13 @@ ul{
 }
 .btn-secondary:active,.btn-secondary:hover{
     color:#7048e8;
+}
+.hero-section{
+    text-align: center;
+}
+.cta-section{
+    text-align: center;
+}
+.footer{
+    text-align: center;
 }
