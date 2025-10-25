@@ -1,3 +1,5 @@
+
+/*-------------------------------- GLOBAL STYLES ----------------------------------*/
 /* body will be having default styled for elemnts inheriting */
 body{
     font-family: 'Poppins',sans-serif;
@@ -53,6 +55,9 @@ ul{
 .small-text{
     font-size: 12px;
 }
+
+
+/*-------------------------------- Components ----------------------------------*/
 .btn{
     font-weight: 400;
     font-size: 16px;
@@ -70,15 +75,35 @@ ul{
 .btn-secondary:active,.btn-secondary:hover{
     color:#7048e8;
 }
+
+
+/*-------------------------------- SECTIONS ----------------------------------*/
+
+
+/*------------------- Hero-Section --------------------*/
 .hero-section{
     text-align: center;
 }
+
+
+/*------------------- features-Section --------------------*/
+.features-main-heading{
+    text-align: center;
+}
+
+
+
+
+
+/*------------------- CTA-Section --------------------*/
 .cta-section{
     text-align: center;
 }
+
+
+
+/*------------------- footer-Section --------------------*/
+
 .footer{
-    text-align: center;
-}
-.features-main-heading{
     text-align: center;
 }
