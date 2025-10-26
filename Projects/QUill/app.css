@@ -95,7 +95,12 @@ ul{
 .highlight-tertiary{
     background-color: #ff922b;
 }
-
+.logo-md{
+    width: 100px;
+}
+.logo-sm{
+    width: 80px;
+}
 
 
 /*-------------------------------- SECTIONS ----------------------------------*/
@@ -111,6 +116,9 @@ ul{
 .features-main-heading{
     text-align: center;
 }
+.features-img{
+    width: 400px;
+}
 
 
 
@@ -122,6 +130,7 @@ ul{
 }
 .cta-card{
     background-color: #339af0;
+    width: 1000px;
 }
 
 
@@ -130,4 +139,7 @@ ul{
 
 .footer{
     text-align: center;
+}
+.social-icons{
+    width: 20px;
 }
