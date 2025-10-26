@@ -1,5 +1,6 @@
 
 /*-------------------------------- GLOBAL STYLES ----------------------------------*/
+/* addin universal selector later to emove default spacing using box model*/
 /* body will be having default styled for elemnts inheriting */
 body{
     font-family: 'Poppins',sans-serif;
@@ -64,17 +65,37 @@ ul{
     text-decoration: none;
 }
 .btn-primary:link,.btn-primary:visited{
-    color: #339af0;
+    color:#ffffff;
+    background-color: #339af0;
 }
 .btn-primary:hover,.btn-primary:active{
-    color:#1c7ed6;
+    color: #ffffff;
+    background-color: #1c7ed6;
 }
 .btn-secondary:link,.btn-secondary:visited{
-    color: #339af0;
+    
+    background-color: #9775fa;
+    color:#ffffff;
 }
 .btn-secondary:active,.btn-secondary:hover{
-    color:#7048e8;
+    color: #ffffff;
+    background-color:#7048e8;
 }
+.highlight{
+    color: #ffffff;
+
+}
+.highlight-primary{
+    background-color:#339af0;
+
+}
+.highlight-secondary{
+    background-color: #9775fa;
+}
+.highlight-tertiary{
+    background-color: #ff922b;
+}
+
 
 
 /*-------------------------------- SECTIONS ----------------------------------*/
@@ -98,6 +119,9 @@ ul{
 /*------------------- CTA-Section --------------------*/
 .cta-section{
     text-align: center;
+}
+.cta-card{
+    background-color: #339af0;
 }
 
 
