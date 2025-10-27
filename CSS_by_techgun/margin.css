@@ -1,0 +1,15 @@
+.box-1{
+    width: 500px;
+    height: 500px;
+    background-color: salmon;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.box-2{
+    width: 500px;
+    height: 500px;
+    background-color: khaki;
+
+}
