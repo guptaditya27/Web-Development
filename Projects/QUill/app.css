@@ -1,3 +1,57 @@
+/* 
+
+---------- TYPOGRAPHY ----------
+
+FONT SIZES
+12px / 16px / 20px / 24px / 32px / 40px / 48px / 62px
+
+FONT WEIGHTS
+400 / 700
+
+LINE HEIGHTS
+1.2 / 1.5
+
+LETTER SPACING
+0 / -2px
+
+FONT FAMILY
+Poppins
+
+---------- COLORS ----------
+
+PRIMARY
+Base: #339af0 (Sky Blue)
+Tint: #d0ebff (Arctic)
+Shade: #1c7ed6 (Deep Sea)
+
+SECONDARY
+Base: #9775fa (Lavendar)
+Tint: #e5dbff (Moonligh Iris)
+Shade: #7048e8 (Velvet Night)
+
+TERTIARY
+Base: #ff922b (Pumpkin)
+Tint: #ffe8cc (Dawn)
+Shade: #f76707 (Lava)
+
+GREY
+Base: #495057 (Slate)
+Tint: #f1f3f5 (Pebble)
+Shade: #212529 (Graphite)
+White: #ffffff (White)
+Black: #000000 (Black)
+
+---------- BORDER RADIUS ----------
+
+4px / 8px / 20px
+
+---------- SPACING SYSTEM ----------
+
+5px / 10px / 15px / 20px / 25px / 30px / 40px / 50px / 60px / 70px / 80px / 90px / 100px / 125px / 150px / 200px / 250px / 300px / 400px / 500px
+
+*/
+
+
 
 /*-------------------------------- GLOBAL STYLES ----------------------------------*/
 /* addin universal selector later to emove default spacing using box model*/
@@ -51,6 +105,10 @@ a{
     text-decoration: none;
     line-height: 1.5;
     font-size: 16px;
+    display: inline-block;
+}
+span{
+    display: inline-block;
 }
 ul{
     
@@ -127,17 +185,30 @@ ul{
 
 
 /*-------------------------------- SECTIONS ----------------------------------*/
-
-
+/*------------------- Navbar --------------------*/
+.navbar{
+    margin-bottom: 200px;
+}
+.hero-heading{
+    margin-bottom: 10px;
+}
+.hero-paragraph{
+    margin-bottom: 50px;
+}
 /*------------------- Hero-Section --------------------*/
 .hero-section{
     text-align: center;
+    margin-bottom: 300px;
 }
 
 
 /*------------------- features-Section --------------------*/
+.features-section{
+    margin-bottom: 300px;
+}
 .features-main-heading{
     text-align: center;
+    margin-bottom: 50px;
 }
 .features-img{
     width: 400px;
@@ -150,6 +221,7 @@ ul{
 /*------------------- CTA-Section --------------------*/
 .cta-section{
     text-align: center;
+    margin-bottom: 300px;
 }
 .cta-card{
     background-color: #339af0;
