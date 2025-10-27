@@ -57,6 +57,8 @@ Black: #000000 (Black)
 /* addin universal selector later to emove default spacing using box model*/
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 /* body will be having default styled for elemnts inheriting */
 body{
@@ -213,7 +215,9 @@ ul{
 .features-img{
     width: 400px;
 }
-
+.features-heading{
+    margin-bottom: 20px;
+}
 
 
 
@@ -229,7 +233,9 @@ ul{
     padding: 100px 200px;
     border-radius: 20px;
 }
-
+.cta-heading{
+    margin-bottom: 30px;
+}
 
 
 /*------------------- footer-Section --------------------*/
