@@ -1,0 +1,23 @@
+div{
+    background-color: khaki;
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    border-width: 15px;
+    border-color: black;
+    border-style: double;
+}
+.button-filled{
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    border: 10px solid black;
+    padding: 20px,40px;
+}
+.button-outline{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 20px,40px;
+    border: 10px solid black;
+}
