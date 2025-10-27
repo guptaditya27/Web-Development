@@ -1,0 +1,23 @@
+div{
+    background-color: khaki;
+    height: 500px;
+    width: 500px;
+    /*border-radius: 15px;*/
+    border-radius: 20px;
+}
+/* pill from rectangle*/
+.div-1{
+    background-color: peru;
+    height: 300px;
+    width: 700px;
+    /*border-radius: 15px;*/
+    border-radius: 250px;
+}
+/* circle from square*/
+.div-2{
+    background-color: palevioletred;
+    height: 500px;
+    width: 500px;
+    /*border-radius: 15px;*/
+    border-radius: 250px;
+}
