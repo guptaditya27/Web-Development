@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*.container{
+    width:1200px;   
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: red;
+}
+ issue arriese if size of viewport changes no more centred     
+
+*/
+.container{
+    width:1200px;   
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+}
