@@ -67,6 +67,10 @@ body{
     font-weight: 400;
     line-height: 1.2;
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /* inheritence prop have lowest speficity*/
 
 /*  grouping shared styles  */
@@ -213,7 +217,8 @@ ul{
     margin-bottom: 50px;
 }
 .features-img{
-    width: 400px;
+    maX-width: 400px;
+    width: 100%;
 }
 .features-heading{
     margin-bottom: 20px;
@@ -229,9 +234,10 @@ ul{
 }
 .cta-card{
     background-color: #339af0;
-    width: 1000px;
+    max-width: 1000px;
     padding: 100px 200px;
     border-radius: 20px;
+    margin: 0 auto;
 }
 .cta-heading{
     margin-bottom: 30px;
