@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    width: 60vw;
+    height: 40vh;
+    background-color: lightblue;
+}
