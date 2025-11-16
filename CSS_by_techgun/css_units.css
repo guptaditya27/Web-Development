@@ -1,0 +1,29 @@
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 3rem;
+    margin-bottom:2rem;
+}
+p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+a{
+    padding: 2rem;
+    background-color: lightblue;
+    display: inline-block;
+}
+
+.parent{
+    width:500px;
+    height: 500px;
+    background-color:blueviolet;
+}
+.child{
+    
+    width: 50%;
+    background-color: bisque;
+    height: 50%;
+}
