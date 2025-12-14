@@ -240,6 +240,7 @@ ul{
 /*------------------- Navbar --------------------*/
 .navbar{
     margin-bottom: 20rem;
+    display: flex; /* flex items are direct children of flex box not grand children*/
 }
 .hero-heading{
     margin-bottom: 1rem;
@@ -293,7 +294,9 @@ ul{
 /*------------------- footer-Section --------------------*/
 
 .footer{
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
 }
 .social-icons{
     width: 20px;
