@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^2.2.0",
+    "eslint": "^10.3.0"
+  }
+}

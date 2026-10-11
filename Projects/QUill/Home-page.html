@@ -3,95 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app.css">
     <title>Quill-Homepage</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
+    <header>
         <!-- Navigation -->
-        <nav class="navbar">
-            <a href="Home-page.html"><img class="logo-md" src="images/quill.svg" alt="quill logo"></a>
+        <nav>
+            <a href="Home-page.html"><img src="images/quill.svg" alt="quill logo"></a>
             <ul>
-                <li><a  class="btn btn-primary-outline" href="login.html">Login</a></li>
-                <li><a class="btn btn-primary" href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
             </ul>
         </nav>
     
-        <!-- Hero Section -->
-            <section class="hero-section">
-                <h1 class="hero-heading"><span class="highlight highlight-secondary">Mindful living</span>Mindful> For the <br>Digital World 📱</h1>
-                <p class="hero-paragraph" id="green-text">The ultimate bullet journal app to document, reflect, and embrace your personal journey </p>
-                <ul>
-                    <li><a class="btn btn-primary" href="register.html">Get Started</a></li>
-                    <li><a class="btn btn-primary-outline" href="#features">Learn More</a></li>
-                </ul>
-            </section>
-        </header>
-        
-        <main>
-            <!-- Features Secton -->
-            <section class="features-section">
-                <h2 class="features-main-heading" id="features">Finally, a <span class="highlight highlight-tertiary">simple and easy</span> to use journal app </h2>
-            
-                <div>
-                    <h3 class="features-heading">Write all your journals in a few clicks</h3>
-                    <p>Unlock the simplicity of online journaling - say goodbye to the hassle of pen and paper 
-                    and hello to effortless journaling with just a few clicks. </p>
-                    <img class="features-img" src="images/features-1.png" alt="simple online juournaling">
-                </div>
-                
-                <div>    
-                    <h3 class="features-heading">Beautifully displayed and neatly organised</h3>
-                    <p>Not just words on a screen - our journals are beautifully displayed and neatly organised. </p>
-                    <img class="features-img" src="images/features-2.png" alt="beautifully displayed journals">
-                </div>
-
-                <div>
-                    <h3 class="features-heading">Create and reflect from anywhere in the world</h3>
-                    <p>Whether you're at home or exploring the far corners of the world, create and reflect on your experiences, 
-                    thoughts, and emotions from anywhere on the globe</p>
-                    <img class="features-img" src="images/features-3.png" alt="create Journals anywhere">
-                </div>
-            
-            </section>
-            
-            <!-- Cta Section-->
-            <section class="cta-section">
-                <div class="cta-card">
-                    <h2 class="cta-heading">Get started Now</h2>
-                    <a class="btn btn-secondary" href="register.html">Get started</a>
-                </div>
-                
-            </section>
-        </main>
-        
-        
-        
-        <!-- footer -->
-        <footer class="footer">
-            <a href="Home-page.html"><img class="logo-sm" src="images/quill.svg"></a>   
+    <!-- Hero Section -->
+        <section>
+            <h1><span>Mindful Living</span>Mindful> For the <br>Digital World 📱</h1>
+            <p>The ultimate bullet journal app to document, reflect, and embrace your personal journey </p>
             <ul>
-                <li><a  href="https://www.instagram.com/"><img class="social-icons" src="images/instagram.svg"></a></li>
-                <li><a  href="https://www.facebook.com/"><img class="social-icons" src="images/facebook.svg"></a></li>
-                <li><a  href="https://x.com/X."><img class="social-icons" src="images/tiktok.svg"></a></li>
-                <li><a  href="https://www.youtube.com"><img class="social-icons" src="images/youtube.svg"></a></li>
+                <li><a href="register.html">Get Started</a></li>
+                <li><a href="#features">Learn More</a></li>
             </ul>
+        </section>
+    </header>
+    
+    <main>
+        <!-- Features Secton -->
+        <section>
+            <h2 id="features">Finally, a <span>simple and easy</span> to use journal app </h2>
+        
+            <div>
+                <h3>Write all your journals in a few clicks</h3>
+                <p>Unlock the simplicity of online journaling - say goodbye to the hassle of pen and paper 
+                and hello to effortless journaling with just a few clicks. </p>
+                <img src="images/features-1.png" alt="simple online juournaling" width="300px">
+            </div>
             
-            
-            <ul>
-                <li><a href="Home-page.html">Home</a></li>
+            <div>    
+                <h3>Beautifully displayed and neatly organised</h3>
+                <p>Not just words on a screen - our journals are beautifully displayed and neatly organised. </p>
+                <img src="images/features-2.png" alt="beautifully displayed journals" width="300px">
+            </div>
 
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li> 
-            </ul>
-            <p class="small-text">Made with ❤️in London</p>
-        </footer>
+            <div>
+                <h3>Create and reflect from anywhere in the world</h3>
+                <p>Whether you're at home or exploring the far corners of the world, create and reflect on your experiences, 
+                thoughts, and emotions from anywhere on the globe</p>
+                <img src="images/features-3.png" alt="create Journals anywhere" width="300px">
+            </div>
+        
+        </section>
+        
+        <!-- Cta Section-->
+        <section>
+            <h2>Get Started Now</h2>
+            <a href="register.html">Get Started</a>
+        </section>
+    </main>
     
-    </div>
     
+    
+    <!-- footer -->
+    <footer>
+        <a href="Home-page.html"><img src="images/quill.svg"></a>   
+        <ul>
+            <li><a href="https://www.instagram.com/"><img src="images/instagram.svg" width="20px"></a></li>
+            <li><a href="https://www.facebook.com/"><img src="images/facebook.svg" width="20px"></a></li>
+            <li><a href="https://x.com/X."><img src="images/tiktok.svg" width="20px"></a></li>
+            <li><a href="https://www.youtube.com"><img src="images/youtube.svg" width="20px"></a></li>
+        </ul>
+        
+        
+        <ul>
+            <li><a href="Home-page.html">Home</a></li>
+
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li> 
+        </ul>
+        <p>Made with ❤️in London</p>
+    </footer>
+        
 </body>
 </html>
