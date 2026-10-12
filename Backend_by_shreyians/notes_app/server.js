@@ -3,6 +3,8 @@ const app=require("./src/app") // jis file ko require kr rha hu aur woh file jo 
 const connectdb=require("./src/db/db")
 connectdb()
 
+require('dotenv').config();
+
 app.listen(3000,()=>{
     console.log("App started successfully ...")
 })
