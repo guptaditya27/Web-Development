@@ -1,6 +1,6 @@
 const usermodel=require("../models/user.model")
 const jwt=require("jsonwebtoken")
-
+const emailService=require("../services/email.service")
 /** 
 * - user register controller
 * - post /api/auth/register
@@ -28,15 +28,16 @@ async function userRegisterController(req,res){
     // needs payload and private key 
     // token need to be set in cookie module used is cookieparser
     // jwt token stores in cookie #ifkyk haha aha !!
-    res.cookie("token",token)
-    res.status(201).json({
-        user:{
-           _id:user._id,
-           email:user.email,
-           name:user.name
-        },
-        token
-    })
+    res.cookie("token",token);
+    (res.status(201).json({
+      user: {
+        _id: user._id,
+        email: user.email,
+        name: user.name,
+      },
+      token,
+    }),
+    await emailService.sendRegistrationEmail(user.email, user.name));
 }
 /**
  * -User Login Controller
@@ -70,7 +71,8 @@ async function userLoginController(req,res){
         name: user.name,
       },
       token,
-    });
+    })
+    
 
 }
 
