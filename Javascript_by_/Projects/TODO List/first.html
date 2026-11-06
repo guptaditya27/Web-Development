@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LISt</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="todo-app">
+        <header class="app-header">
+            <p class="eyebrow">YOUR DAILY SPACE</p>
+            <h1>Things to do<span>.</span></h1>
+            <p class="subtitle">Make a little progress, one task at a time.</p>
+        </header>
+
+        <form class="task-form">
+            <label class="sr-only" for="tasks">New task</label>
+            <input type="text" name="tasks" id="tasks" placeholder="Add a task to your list..." required>
+            <button type="submit">Add task</button>
+        </form>
+
+        <section class="task-section" aria-labelledby="task-heading">
+            <div class="list-header">
+                <h2 id="task-heading">Your list</h2>
+                <span id="task-count" class="task-count">0 tasks</span>
+            </div>
+            <div id="alltasks" aria-live="polite">
+                <p id="empty-state" class="empty-state">Your list is clear. Add a task to get started.</p>
+            </div>
+        </section>
+    </main>
+    <script src="./first.js"></script>
+</body>
+</html>
